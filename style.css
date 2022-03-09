@@ -23,7 +23,8 @@ body {
 
 /* shared */
 
-button.outline {
+button.outline,
+input[type="submit"].outline {
   padding: 0.75rem 1.75rem;
   border: 1px solid var(--pink-400);
   font-size: 1.5rem;
@@ -33,13 +34,16 @@ button.outline {
 }
 
 button.outline:hover,
-button.outline:focus {
+button.outline:focus,
+input[type="submit"].outline:hover,
+input[type="submit"].outline:focus {
   background-color: var(--pink-400);
   color: var(--bg-100);
   transform: scale(1.1);
 }
 
-button.outline:active {
+button.outline:active,
+input[type="submit"].outline:active {
   transform: scale(1);
 }
 
@@ -76,8 +80,10 @@ header .title {
 header .hero {
   position: absolute;
   right: 344px;
-  top: 354px;
-  left: 900px;
+  /* top: 354px;
+  left: 900px; */
+  top: 46vh;
+  width: 41vw;
   text-align: right;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(0.2rem);
@@ -102,7 +108,6 @@ header .hero button {
   margin-top: 24px;
 }
 
-/* main */
 /* main content*/
 
 main .content {
@@ -187,6 +192,7 @@ main .content h1 {
 .content .split .group p {
   font-size: 1.25rem;
 }
+
 /* main quotes */
 
 main .quotes {
@@ -232,4 +238,129 @@ main .form {
   width: 100vw;
   padding-top: 2rem;
   padding-bottom: 2.5rem;
+}
+
+.form form {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+}
+
+.form form h1 {
+  grid-column: span 2;
+  font-size: 2.25rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.form form .input {
+  display: flex;
+  flex-direction: column;
+  width: calc(35vw - 4.5rem);
+}
+
+.form form .input.r-align {
+  margin-left: auto;
+  margin-right: 2.25rem;
+}
+.form form .input.l-align {
+  margin-right: auto;
+  margin-left: 2.25rem;
+}
+
+.form form .textarea {
+  margin: auto;
+  margin-top: 1rem;
+  grid-column: span 2;
+}
+
+.form form input[type="submit"] {
+  margin: auto;
+  margin-top: 2.5rem;
+  grid-column: span 2;
+  width: 12rem;
+}
+
+.form form label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.form form input,
+.form form textarea,
+.form form select {
+  font-size: 1.25rem;
+  padding: 0.25rem;
+}
+
+.form form .textarea textarea {
+  width: calc((2 * 35vw) - 4.5rem);
+  resize: vertical;
+}
+
+/* footer */
+
+footer {
+  padding: 0 15vw;
+  display: grid;
+  grid-template-columns: 60% auto;
+  grid-template-rows: repeat(2, auto);
+}
+
+footer .top {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0 0.25rem 0;
+  border-bottom: 1px solid var(--black-900);
+}
+
+footer .top h3 {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+footer .top div {
+  display: flex;
+  flex-direction: row;
+}
+
+footer .top div p {
+  padding: 0 0.75rem;
+  cursor: pointer;
+  color: var(--black-900);
+}
+
+footer .top div p:hover {
+  color: var(--pink-400);
+}
+
+footer .bottom {
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+  padding: 0 2rem;
+}
+
+footer .bottom h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+footer .bottom p,
+footer .bottom a {
+  font-size: 1.125rem;
+}
+
+footer .bottom:nth-child(3) p:last-of-type {
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+footer .bottom:nth-child(2) {
+  width: 80%;
 }

@@ -132,47 +132,55 @@
       <section class="form">
         <form action="" method="post">
           <h1>Doloremque</h1>
-          <div>
-            <label for="fname">* First Name</label>
+          <div class="input r-align">
+            <label for="fname">* Aenean feugiat </label>
             <input type="text" name="fname" id="fname" required />
           </div>
-          <div>
-            <label for="lname">Last Name</label>
+          <div class="input l-align">
+            <label for="lname">Etiam mauris</label>
             <input type="text" name="lname" id="lname" />
           </div>
-          <div>
-            <label for="email">* Email</label>
+          <div class="input r-align">
+            <label for="email">* Donec </label>
             <input type="email" name="email" id="email" required />
           </div>
-          <label for="cars">Choose a car</label>
-          <select name="cars" id="cars">
-            <optgroup label="Swedish Cars">
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-            </optgroup>
-            <optgroup label="German Cars">
-              <option value="mercedes">Mercedes</option>
-              <option value="audi">Audi</option>
-            </optgroup>
-          </select>
-          <div>
-            <textarea name="additional" id="additional" cols="30" rows="10"></textarea>
+          <div class="input l-align">
+            <label for="cSelect">* Sed ac arcu</label>
+            <select name="cSelect" id="cSelect">
+              <optgroup label="Nunc malesuada">
+                <option value="posuere">posuere</option>
+                <option value="Nullam">Nullam</option>
+              </optgroup>
+              <optgroup label="amet sapien">
+                <option value="pulvinar">pulvinar</option>
+                <option value="ultrices">ultrices</option>
+                <option value="libero">libero</option>
+              </optgroup>
+            </select>
           </div>
-          <input type="submit" value="Submit" />
+          <div class="textarea">
+            <textarea
+              name="additional"
+              id="additional"
+              cols="30"
+              rows="5"
+              placeholder="Nullam nec lectus ut mauris "
+            ></textarea>
+          </div>
+          <input class="outline" type="submit" value="Submit" />
         </form>
       </section>
     </main>
     <footer>
       <div class="top">
-        eligendi inventore
+        <h3>eligendi inventore</h3>
         <div>
-          <i>icons</i>
-          <i>icons</i>
-          <i>icons</i>
-          <i>icons</i>
+          <p>instagram</p>
+          <p>twitter</p>
+          <p>linkedin</p>
         </div>
       </div>
-      <div>
+      <div class="bottom">
         <h2>About Us</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quis itaque odit magnam voluptas dolore
@@ -181,7 +189,7 @@
           facere similique quasi ratione odit ducimus animi vitae adipisci placeat tempora eveniet? Atque.
         </p>
       </div>
-      <div>
+      <div class="bottom">
         <h2>location</h2>
         <p>1545 officiis praesentium</p>
         <p>Illo, CO 985</p>
