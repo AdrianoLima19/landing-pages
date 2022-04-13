@@ -1,6 +1,6 @@
 #Design Layout
 
-Web page design with javascript Intersetion animation.
+Landing page design **#1** <span style="font-size=.95em">with Intersection Observer</span>
 
 ---
 
